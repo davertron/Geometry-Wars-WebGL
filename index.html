@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Geometrical Warfare</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/index.css" type="text/css" media="screen" charset="utf-8">
+        <script type="text/javascript" charset="utf-8" src="js/jquery-1.8.2.min.js"></script>
+	</head>
+
+	<body>
+		<script src="js/three.min.js"></script>
+		<script src="js/ShaderExtras.js"></script>
+		<script src="js/EffectComposer.js"></script>
+		<script src="js/RenderPass.js"></script>
+		<script src="js/BloomPass.js"></script>
+		<script src="js/ShaderPass.js"></script>
+		<script src="js/MaskPass.js"></script>
+		<script src="js/SavePass.js"></script>
+		<script src="js/Detector.js"></script>
+		<script src="js/Stats.js"></script>
+        <script src="js/main.js"></script>
+
+        <div id="game-over" class="menu">Game Over
+            <ul class="menu-actions">
+                <li class="selected" data-action="restart">Play Again?</li>
+                <li data-action="goToMainMenu">Main Menu</li>
+            </ul>
+        </div>
+        <div id="main-menu" class="menu current">Geometrical Warfare
+            <ul class="menu-actions">
+                <li class="selected" data-action="start">Play</li>
+                <li data-action="showControls">View Controls</li>
+            </ul>
+        </div>
+        <div id="paused" class="menu">Paused
+            <ul class="menu-actions">
+                <li class="selected" data-action="unpause">Continue</li>
+                <li data-action="goToMainMenu">Quit</li>
+            </ul>
+        </div>
+        <div id="hud">
+            <span id="lives">Lives: 3</span>
+            <span id="score">Score: 0</span>
+        </div>
+        <div id="controls" class="menu">
+            <ul>
+                <li>W - Move forward</li>
+                <li>A - Rotate Counterclockwise</li>
+                <li>D - Rotate Clockwise</li>
+                <li>Space - Shoot</li>
+                <li>P - Pause</li>
+            </ul>
+            <ul class="menu-actions">
+                <li class="selected" data-action="goToMainMenu">Back</li>
+            </ul>
+        </div>
+	</body>
+</html>
+
